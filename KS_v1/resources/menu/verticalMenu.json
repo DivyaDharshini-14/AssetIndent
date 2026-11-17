@@ -1,0 +1,329 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Dashboard",
+      "slug": "dashboard",
+      "icon": "menu-icon icon-base bx bx-home-circle",
+      "permission": "dashboard:view"
+    },
+    {
+      "name": "Procurement",
+      "icon": "menu-icon icon-base bx bx-cart-alt",
+      "slug": [
+        "indents.dashboard",
+        "indents.index",
+        "indents.create",
+        "indents.show",
+        "indents.edit",
+        "purchase-requisitions.index",
+        "purchase-requisitions.show",
+        "rfqs.index",
+        "rfqs.compare",
+        "purchase-orders.index",
+        "purchase-orders.create",
+        "purchase-orders.show",
+        "grns.index",
+        "grns.create",
+        "grns.show",
+        "quality-inspections.index",
+        "quality-inspections.show",
+        "payments.index",
+        "payments.show",
+        "procurement.reports"
+      ],
+      "submenu": [
+        {
+          "url": "/indents/dashboard",
+          "name": "Indent Dashboard",
+          "slug": "indents.dashboard",
+          "permission": "indents:view",
+          "icon": "menu-icon icon-base bx bx-grid-alt"
+        },
+        {
+          "url": "/indents",
+          "name": "Indents",
+          "slug": "indents.index",
+          "permission": "indents:view",
+          "icon": "menu-icon icon-base bx bx-list-ul"
+        },
+        {
+          "url": "/purchase-requisitions",
+          "name": "Purchase Requisitions",
+          "slug": "purchase-requisitions.index",
+          "permission": "purchase-requisition.view|purchase-requisitions:view",
+          "icon": "menu-icon icon-base bx bx-list-check"
+        },
+        {
+          "url": "/rfqs",
+          "name": "RFQs",
+          "slug": "rfqs.index",
+          "permission": "rfq.view|rfqs:view",
+          "icon": "menu-icon icon-base bx bx-message-square-detail"
+        },
+        {
+          "url": "/purchase-orders",
+          "name": "Purchase Orders",
+          "slug": "purchase-orders.index",
+          "permission": "purchase-order.view|purchase-orders:view",
+          "icon": "menu-icon icon-base bx bx-cart"
+        },
+        {
+          "url": "/grns",
+          "name": "GRNs",
+          "slug": "grns.index",
+          "permission": "grn.view|grns:view",
+          "icon": "menu-icon icon-base bx bx-package"
+        },
+        {
+          "url": "/quality-inspections",
+          "name": "Quality Inspections",
+          "slug": "quality-inspections.index",
+          "permission": "quality-inspection.view|quality-inspections:view|quality-inspection.perform|quality-inspections:perform",
+          "icon": "menu-icon icon-base bx bx-check-shield"
+        },
+        {
+          "url": "/payments",
+          "name": "Payments",
+          "slug": "payments.index",
+          "permission": "payment.view|payments:view|purchase-order.payment|purchase-orders:payment|purchase-order.pay",
+          "icon": "menu-icon icon-base bx bx-credit-card"
+        },
+        {
+          "url": "/procurement/reports",
+          "name": "Reports",
+          "slug": "procurement.reports",
+          "permission": "purchase-report.view|procurement.reports:view",
+          "icon": "menu-icon icon-base bx bx-bar-chart-alt-2"
+        }
+      ]
+    },
+    {
+      "name": "Asset",
+      "icon": "menu-icon icon-base bx bx-laptop",
+      "slug": [
+        "asset-types",
+        "asset-names",
+        "asset-category",
+        "asset",
+        "asset.depreciation",
+        "dashboard.asset",
+        "asset.assign.bulk"
+      ],
+      "submenu": [
+        {
+          "url": "/asset-category",
+          "name": "Asset Categories",
+          "slug": "asset-category",
+          "icon": "menu-icon icon-base bx bx-spreadsheet"
+        },
+        {
+          "url": "/asset-types",
+          "name": "Asset Types",
+          "slug": "asset-types",
+          "icon": "menu-icon icon-base bx bx-dock-top"
+        },
+        {
+          "url": "/asset-names",
+          "name": "Asset Names",
+          "slug": "asset-names",
+          "permission": "asset-types:view",
+          "icon": "menu-icon icon-base bx bx-rename"
+        },
+        {
+          "url": "/asset",
+          "name": "Asset",
+          "slug": "asset",
+          "icon": "menu-icon icon-base bx bx-cart-alt"
+        },
+        {
+          "url": "/asset-depreciation",
+          "name": "Asset Depreciation",
+          "slug": "asset.depreciation",
+          "icon": "menu-icon icon-base bx bx-time-five"
+        },
+        {
+          "url": "/dashboard/asset",
+          "name": "Asset Dashboard",
+          "slug": "dashboard.asset",
+          "icon": "menu-icon icon-base bx bx-bar-chart-alt-2"
+        },
+        {
+          "url": "/asset/assignment/bulk",
+          "name": "Bulk Asset Assignment",
+          "slug": "asset.assign.bulk",
+          "icon": "menu-icon icon-base bx bx-transfer"
+        }
+      ]
+    },
+    {
+      "name": "Asset Reports",
+      "icon": "menu-icon icon-base bx bx-bar-chart-alt-2",
+      "slug": [
+        "reports/companywiseassets",
+        "reports/branchwiseassets",
+        "reports/locationwiseassets",
+        "reports/brandwiseassets",
+        "reports/vendorwiseassets",
+        "reports/categorywiseassets",
+        "reports/typewiseassets"
+      ],
+      "submenu": [
+        {
+          "url": "/reports/companywiseassets",
+          "name": "Company Wise Assets",
+          "slug": "reports.companywiseassets",
+          "icon": "menu-icon icon-base bx bx-buildings"
+        },
+        {
+          "url": "/reports/branchwiseassets",
+          "name": "Branch Wise Assets",
+          "slug": "reports.branchwiseassets",
+          "icon": "menu-icon icon-base bx bx-git-branch"
+        },
+        {
+          "url": "/reports/locationwiseassets",
+          "name": "Area Wise Assets",
+          "slug": "reports.locationwiseassets",
+          "icon": "menu-icon icon-base bx bx-map"
+        },
+        {
+          "url": "/reports/brandwiseassets",
+          "name": "Brand Wise Assets",
+          "slug": "reports.brandwiseassets",
+          "icon": "menu-icon icon-base bx bx-purchase-tag"
+        },
+        {
+          "url": "/reports/vendorwiseassets",
+          "name": "Vendor Wise Assets",
+          "slug": "reports.vendorwiseassets",
+          "icon": "menu-icon icon-base bx bx-store"
+        },
+        {
+          "url": "/reports/categorywiseassets",
+          "name": "Category Wise Assets",
+          "slug": "reports.categorywiseassets",
+          "icon": "menu-icon icon-base bx bx-category"
+        },
+        {
+          "url": "/reports/typewiseassets",
+          "name": "Type Wise Assets",
+          "slug": "reports.typewiseassets",
+          "icon": "menu-icon icon-base bx bx-layer"
+        }
+      ]
+    },
+    {
+      "name": "Master",
+      "icon": "menu-icon icon-base bx bx-grid-alt",
+      "slug": [
+        "companies",
+        "branch",
+        "location",
+        "brands",
+        "department",
+        "designation",
+        "vendor",
+        "item-masters.index"
+      ],
+      "submenu": [
+        {
+          "url": "/companies",
+          "name": "Companies",
+          "slug": "companies",
+          "icon": "menu-icon icon-base bx bx-building-house"
+        },
+        {
+          "url": "/branch",
+          "name": "Branches",
+          "slug": "branch",
+          "icon": "menu-icon icon-base bx bx-map-pin"
+        },
+        {
+          "url": "/location",
+          "name": "Areas",
+          "slug": "location",
+          "icon": "menu-icon icon-base bx bx-category-alt"
+        },
+        {
+          "url": "/brands",
+          "name": "Brands",
+          "slug": "brands",
+          "icon": "menu-icon icon-base bx bx-gift"
+        },
+        {
+          "url": "/designation",
+          "name": "Designation",
+          "slug": "designation",
+          "icon": "menu-icon icon-base bx bx-id-card"
+        },
+        {
+          "url": "/department",
+          "name": "Department",
+          "slug": "department",
+          "icon": "menu-icon icon-base bx bx-group"
+        },
+        {
+          "url": "/vendor",
+          "name": "Vendor",
+          "slug": "vendor",
+          "icon": "menu-icon icon-base bx bx-user-check"
+        },
+        {
+          "url": "/item-masters",
+          "name": "Item Master",
+          "slug": "item-masters.index",
+          "icon": "menu-icon icon-base bx bx-box",
+          "permission": "item.view"
+        }
+      ]
+    },
+    {
+      "name": "Setting",
+      "icon": "menu-icon icon-base bx bx-cog",
+      "slug": [
+        "employees",
+        "roles",
+        "employee-staff",
+        "permissions",
+        "branches",
+        "settings",
+        "approval-templates"
+      ],
+      "submenu": [
+        {
+          "url": "/employees",
+          "name": "User",
+          "slug": "employees"
+        },
+        {
+          "url": "roles",
+          "name": "Roles",
+          "slug": "roles"
+        },
+        {
+          "url": "/employee-staff",
+          "name": "Employee",
+          "slug": "employee-staff",
+          "permission": "employees:view"
+        },
+        {
+          "url": "permissions",
+          "name": "Permissions",
+          "slug": "permissions"
+        },
+        {
+          "url": "/approval-templates",
+          "name": "Approval Templates",
+          "slug": "approval-templates",
+          "permission": "approval-templates:view"
+        },
+        {
+          "url": "settings",
+          "name": "App Settings",
+          "slug": "settings"
+        }
+      ]
+    }
+  ]
+}
